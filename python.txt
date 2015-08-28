@@ -1,0 +1,105 @@
+================================================================================
+=== LISTS AND FUNCTIONS
+================================================================================
+*** Lists and Functions
+
+** List Recap
+
+1. List accessing
+# n is a list
+n[ index ] where index starts from 0
+
+2. List element modification
+x[ n ] = v
+
+3. Appending to a list
+n.append( item )
+
+4. Removing elements from lists
+# n is a list
+n.pop( index ) will remove the item at index from the list and return it
+n.remove( item ) will remove the actual item if it finds it
+del( n[ index ] ) is like n.pop( index ) but it won't return the removed item
+n.pop() will remove the last item from the list
+
+** Function Recap
+
+5. Changing the functionality of a functionality
+
+6. More than one argument
+
+7. Strings in functions
+
+** Introduction to Using Functions With Lists
+
+8. Passing a list to a function
+
+9. Using an element from a list in a function
+
+10. Modifying an element of a list in a function
+List is passed in by reference
+
+11. List manipulation in functions
+You can also append or delete items of a list inside a function just as if you were manipulating the list outside a function.
+
+** Using the Entire List in a function
+
+12. Printing out a list item by item in a function
+for i in range( 0, len( x ) )
+	print x[ i ]
+
+13. Modifying each element in a list in a function
+
+14. Passing a range into a function
+range( stop ) # => [ 0, 1, ..., stop - 1 ]
+range( start, stop ) # => [ start, ..., stop - 1 ]
+range( start, stop, step ) # => [ start, start + step, ... , < stop ]
+In all cases, range() returns a list of numbers from start up to (but not including) stop. Each item increases by step.
+If omitted, start defaults to zero and step defaults to one.
+
+15. Iterating over a list in a function
+Method 1
+for item in list:
+	print item
+Method 2
+for i in range( len( list ) ):
+	print list[ i ]
+Method 1 is useful to loop through the list, but it's not possible to modify the list this way.
+Method 2 uses indexes to loop through the list, making it possible to also modify the list if needed.
+
+16. Using strings in lists in functions
+
+** Using Lists of Lists in Functions
+
+17. Using two lists as two arguments in a function
+You can just use + to concatenate two lists. (You don't want to use append, because this just adds the entire second list as a single object at the end of the first.)
+
+18. Using a list of lists in a function
+
+*** Battleship!
+
+** Don't Sink My Battleship!
+
+1. Welcome to Battleship!
+
+2. Getting Our Feet Wet
+
+3. Make a List
+
+4. Check it Twice
+
+5. Custom Printing
+
+6. Printing Pretty
+
+7. Hide...
+
+8. ...and Seek!
+
+9. It's Not Cheating - It's Debugging!
+
+** Hit or Miss?
+
+** You Sunk My Battleship!
+
+
